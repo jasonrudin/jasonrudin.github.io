@@ -72,10 +72,11 @@ a:hover{
 }
 
 #project_display_container{
-	display: none;
 	background: #F7F2F0;
 	height: 100vh;
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	vertical-align: top;
 	overflow: auto;
 	position: relative;

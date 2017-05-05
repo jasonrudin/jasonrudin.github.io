@@ -326,13 +326,14 @@ function checkInView(listItem){
 	}
 	
 }
-
+	
 $(document).keydown(function(e) {
     switch(e.which) {
         case 37: // left
         break;
 
 		case 38: 
+			$.fancybox.close();
 			var previous_main = $(".active").prev();
 			//var previous_list = $(".selected").parent().prev().find(".project");
 			var previous_list = $(".selected").parent().prev();
@@ -361,6 +362,7 @@ $(document).keydown(function(e) {
         break;
 
         case 40:
+        	$.fancybox.close();
 			var next_main = $(".active").next();
 			//var next_list = $(".selected").parent().next().find(".project");
 			var next_list = $(".selected").parent().next();
